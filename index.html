@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mohamed Salem — Software Engineer</title>
+  <meta name="description" content="Mohamed Salem — Software Engineer based in Cairo, Egypt. Building distributed, scalable backend systems with Java, Spring Boot, Kafka, and Keycloak." />
+  <meta name="author" content="Mohamed Salem" />
+  <meta name="theme-color" content="#0f1115" />
+
+  <!-- Open Graph / LinkedIn / Twitter preview -->
+  <meta property="og:title" content="Mohamed Salem — Software Engineer" />
+  <meta property="og:description" content="Building distributed, scalable backend systems." />
+  <meta property="og:image" content="assets/profile.jpg" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" type="image/jpeg" href="assets/profile.jpg" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <a class="skip-link" href="#about">Skip to content</a>
+
+  <!-- ============ NAVIGATION ============ -->
+  <header class="nav">
+    <a href="#top" class="brand">M.S.</a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="assets/Mohamed_Salem_CV.pdf" class="btn btn-ghost" download>Resume</a>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="top">
+    <div class="hero-text">
+      <p class="eyebrow">Cairo, Egypt &middot; Open to work</p>
+      <h1>Mohamed Salem</h1>
+      <p class="role">Software Engineer</p>
+      <p class="tagline">Building distributed, scalable backend systems.</p>
+      <p class="bio">
+        I build production-grade backend systems with Java, Spring Boot,
+        and event-driven architectures, and I solve algorithms competitively
+        on Codeforces. Looking for junior / new-grad software engineering
+        roles where I can ship real systems and grow with strong engineers.
+      </p>
+      <ul class="focus-pills" aria-label="Currently focused on">
+        <li><strong>Focus:</strong></li>
+        <li>Microservices</li>
+        <li>Web MVC</li>
+        <li>Event-driven</li>
+        <li>Security</li>
+        <li>Distributed systems</li>
+      </ul>
+      <div class="cta-row">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="assets/Mohamed_Salem_CV.pdf" class="btn btn-ghost" download>Download CV</a>
+        <a href="mailto:mohamed01280368366@gmail.com" class="btn btn-ghost">Email me</a>
+      </div>
+      <ul class="socials">
+        <li><a href="https://github.com/leo-salem" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/mohamed-salem-8491362a0/" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://codeforces.com/profile/Leo_Salem" target="_blank" rel="noopener">Codeforces</a></li>
+        <li><a href="mailto:mohamed01280368366@gmail.com">Email</a></li>
+      </ul>
+    </div>
+    <div class="hero-image">
+      <img src="assets/profile.jpg" alt="Portrait photo of Mohamed Salem" width="320" height="320" />
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section" id="about">
+    <h2>About</h2>
+    <div class="about-grid">
+      <div>
+        <p>
+          I&rsquo;m a fresh Computer Science graduate (Menofia University, June 2026).
+          During my degree I built the kind of systems I&rsquo;d want to work on
+          in industry: a distributed microservices clinic platform with Kafka
+          and Keycloak, a JWT-secured e-commerce API, a Git clone written
+          from scratch, and a local-first AI-free job-ranking engine.
+        </p>
+        <p>
+          My focus is the backend stack I know deeply &mdash; Spring Boot,
+          Hibernate/JPA, PostgreSQL, Redis, Kafka, Docker &mdash; and the
+          fundamentals underneath it: data structures, concurrency, system
+          design. I&rsquo;ve solved 2000+ competitive-programming problems
+          and I think it shows in how I approach engineering: edge cases
+          first, then the happy path.
+        </p>
+        <p class="how-i-work">
+          <strong>How I work:</strong> meaningful commit messages, README per
+          repo, tests where they actually catch regressions, defensive code
+          at the boundaries, simple code in the middle.
+        </p>
+      </div>
+      <aside class="about-side">
+        <dl>
+          <dt>Education</dt>
+          <dd>B.Sc. Computer Science<br /><span class="muted">Menofia University &middot; August 2022 &ndash; June 2026</span><br /><span class="muted">GPA 3.3 / 4.0</span></dd>
+          <dt>Location</dt>
+          <dd>Cairo, Egypt</dd>
+          <dt>Open to</dt>
+          <dd>Junior / new-grad backend roles<br /><span class="muted">USA &middot; Europe &middot; Egypt &middot; Remote</span></dd>
+          <dt>Currently exploring</dt>
+          <dd><span class="muted">System design, low-level design, design patterns, distributed systems, DevOps &amp; CI/CD, cloud-native architecture (Kubernetes)</span></dd>
+        </dl>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section class="section" id="projects">
+    <h2>Selected Projects</h2>
+    <p class="muted">Five projects I&rsquo;d be happy to walk through in an interview &mdash; problem, decisions, trade-offs.</p>
+
+    <!-- FEATURED HEADLINE PROJECT -->
+    <article class="project project-featured">
+      <header>
+        <span class="featured-badge">Featured</span>
+        <h3>Poly-Clinic-System</h3>
+        <div class="stack stack-top">
+          <span>Spring Boot</span><span>PostgreSQL</span><span>Kafka</span><span>Redis</span>
+          <span>Keycloak</span><span>Stripe</span><span>Docker</span><span>MapStruct</span>
+        </div>
+      </header>
+      <p class="project-problem">
+        Production-grade distributed clinic platform &mdash; appointments,
+        payments, prescriptions, IAM &mdash; built to behave like a real
+        multi-team microservices ecosystem.
+      </p>
+      <ul class="project-decisions">
+        <li><strong>Reliability:</strong> Kafka events with the Outbox Pattern for exactly-once delivery; Redis distributed locks prevent race conditions on financial and booking operations.</li>
+        <li><strong>Identity:</strong> Centralised IAM via Keycloak, API Gateway security filters, RBAC, and a Token Service for uniform auth across services.</li>
+        <li><strong>Payments:</strong> Stripe manual-capture flow with idempotency keys to prevent double-charges on retries.</li>
+        <li><strong>Communication:</strong> Synchronous REST + Feign with automatic JWT propagation, async Kafka for cross-service events.</li>
+        <li><strong>Operations:</strong> Cron schedulers automate maintenance routines and optimise memory usage.</li>
+      </ul>
+      <a class="project-link" href="https://github.com/leo-salem/Poly-Clinic-System" target="_blank" rel="noopener">View on GitHub &rarr;</a>
+    </article>
+
+    <!-- SECONDARY PROJECTS GRID -->
+    <div class="projects">
+
+      <article class="project">
+        <header>
+          <h3>Job Hunter</h3>
+          <span class="tag">Full-stack &middot; Recent</span>
+        </header>
+        <div class="stack stack-top">
+          <span>FastAPI</span><span>PostgreSQL</span><span>Redis</span><span>Celery</span>
+          <span>SQLAlchemy</span><span>HTMX</span><span>Docker</span>
+        </div>
+        <p class="project-problem">
+          Local-first AI-free job-hunting assistant. Scrapes 7+ sources for
+          Java/backend roles in USA + Europe and Egypt, ranks each job 0&ndash;100
+          with a transparent rule engine.
+        </p>
+        <ul class="project-decisions">
+          <li><strong>Determinism over AI:</strong> region-aware rule engine with company tiers (Stripe / OpenAI / Instabug...), visa/relocation signals, anti-spam, role-intent penalties. No external API.</li>
+          <li><strong>Async pipeline:</strong> parallel scrape with global + per-source concurrency caps (LinkedIn=1, Wuzzuf=2). <strong>6&times; faster</strong> after optimisation.</li>
+          <li><strong>Tombstone deletion:</strong> &ldquo;Submitted&rdquo; permanently removes a job and prevents re-add on next scrape.</li>
+          <li><strong>51 tests</strong>, 6 Alembic migrations, full Docker Compose stack (Postgres + Redis + FastAPI + Celery).</li>
+        </ul>
+        <a class="project-link" href="https://github.com/leo-salem/Leo-job-hunter" target="_blank" rel="noopener">View on GitHub &rarr;</a>
+      </article>
+
+      <article class="project">
+        <header>
+          <h3>E-Commerce Backend API</h3>
+          <span class="tag">REST API</span>
+        </header>
+        <div class="stack stack-top">
+          <span>Java</span><span>Spring Boot</span><span>Hibernate</span><span>JWT</span><span>Redis</span>
+        </div>
+        <p class="project-problem">
+          Clean-architecture Spring Boot REST API for a full e-commerce
+          domain &mdash; products, categories, carts, orders &mdash; with proper
+          auth and persistence layered correctly.
+        </p>
+        <ul class="project-decisions">
+          <li><strong>Auth:</strong> JWT with refresh-token rotation; Redis-backed token blacklist for logout and revocation.</li>
+          <li><strong>Persistence:</strong> JPA/Hibernate with full mapping coverage &mdash; OneToMany, ManyToMany, cascading, orphan removal.</li>
+          <li><strong>Error handling:</strong> Global Exception Handler with custom typed exceptions for consistent JSON error responses.</li>
+          <li><strong>Layering:</strong> Controller / Service / Repository with no leakage of persistence concerns into the API layer.</li>
+        </ul>
+        <a class="project-link" href="https://github.com/leo-salem/E-Commerce-API" target="_blank" rel="noopener">View on GitHub &rarr;</a>
+      </article>
+
+      <article class="project">
+        <header>
+          <h3>Gitlet</h3>
+          <span class="tag">CLI &middot; Algorithms</span>
+        </header>
+        <div class="stack stack-top">
+          <span>Java</span><span>SHA-1</span><span>File I/O</span><span>DAG traversal</span>
+        </div>
+        <p class="project-problem">
+          Distributed version control system in Java &mdash; my own minimal
+          Git, written to understand what actually happens inside
+          <code>commit</code>, <code>branch</code>, and <code>merge</code>.
+        </p>
+        <ul class="project-decisions">
+          <li><strong>Snapshotting:</strong> SHA-1 hashed blobs and commits for content-addressable storage.</li>
+          <li><strong>Data model:</strong> custom commit / blob / branch structures with a DAG for merge-base detection.</li>
+          <li><strong>Commands:</strong> init, add, commit, checkout, branch, merge &mdash; all real, no shortcuts.</li>
+          <li><strong>Persistence:</strong> File I/O + Java serialisation for the local object database.</li>
+        </ul>
+        <a class="project-link" href="https://github.com/leo-salem/Gitlet" target="_blank" rel="noopener">View on GitHub &rarr;</a>
+      </article>
+
+      <article class="project">
+        <header>
+          <h3>PathFinder Visualizer</h3>
+          <span class="tag">JavaFX &middot; Visualization</span>
+        </header>
+        <div class="stack stack-top">
+          <span>Java</span><span>JavaFX</span><span>Multithreading</span><span>BFS</span><span>DFS</span><span>Dijkstra</span>
+        </div>
+        <p class="project-problem">
+          Desktop visualisation of BFS, DFS, and Dijkstra on a weighted
+          grid &mdash; you draw obstacles, set start/goal, and watch the algorithm
+          explore in real time.
+        </p>
+        <ul class="project-decisions">
+          <li><strong>Responsiveness:</strong> JavaFX Tasks + multithreading so the UI never blocks during a search.</li>
+          <li><strong>Interactivity:</strong> click-drag for obstacles, draggable start/goal markers, adjustable grid weights.</li>
+          <li><strong>Architecture:</strong> algorithms are pluggable behind a common interface &mdash; adding a new one is one file.</li>
+        </ul>
+        <a class="project-link" href="https://github.com/leo-salem/PathFinder-Visualizer" target="_blank" rel="noopener">View on GitHub &rarr;</a>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section class="section" id="skills">
+    <h2>Skills</h2>
+    <p class="muted">Grouped by category. Bold = strongest.</p>
+    <div class="skills">
+
+      <div class="skill-group">
+        <h4>Languages</h4>
+        <ul><li class="strong">Java (SE, EE, FX)</li><li>C</li><li>C++</li><li>Python</li><li>JavaScript</li></ul>
+      </div>
+
+      <div class="skill-group">
+        <h4>Frameworks</h4>
+        <ul><li class="strong">Spring Boot</li><li class="strong">Spring Cloud (Eureka, Gateway, Feign)</li><li class="strong">Hibernate / JPA</li><li>Spring MVC</li><li>Servlets &amp; JSP</li><li>JavaFX</li></ul>
+      </div>
+
+      <div class="skill-group">
+        <h4>Databases</h4>
+        <ul><li class="strong">PostgreSQL</li><li class="strong">Redis</li><li>MySQL</li><li>JDBC</li><li>JPQL</li></ul>
+      </div>
+
+      <div class="skill-group">
+        <h4>Tools &amp; Infra</h4>
+        <ul><li class="strong">Docker</li><li class="strong">Git</li><li>Kubernetes</li><li>Maven</li><li>Postman</li><li>Swagger UI</li><li>Grafana</li><li>Zipkin</li></ul>
+      </div>
+
+      <div class="skill-group">
+        <h4>Concepts</h4>
+        <ul><li class="strong">REST APIs</li><li class="strong">Microservices</li><li class="strong">Event-Driven (Kafka, RabbitMQ)</li><li class="strong">JWT &amp; RBAC</li><li>IoC (DI, AOP)</li></ul>
+      </div>
+
+      <div class="skill-group">
+        <h4>Foundations</h4>
+        <ul><li class="strong">Data Structures</li><li class="strong">Algorithms</li><li>OOP</li><li>SOLID</li><li>Concurrency</li><li>OS Concepts</li></ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ ACHIEVEMENTS ============ -->
+  <section class="section" id="achievements">
+    <h2>Achievements</h2>
+    <ul class="achievements">
+      <li>
+        <strong>ECPC 2024 Qualifications &mdash; 44th place</strong>
+        <span class="muted">Day 2, among 400+ teams (Egyptian Collegiate Programming Contest)</span>
+      </li>
+      <li>
+        <strong>Codeforces Pupil</strong>
+        <a href="https://codeforces.com/profile/Leo_Salem" target="_blank" rel="noopener">@Leo_Salem</a>
+      </li>
+      <li>
+        <strong>2000+ problems solved</strong>
+        <span class="muted">across competitive-programming platforms</span>
+      </li>
+    </ul>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section contact" id="contact">
+    <h2>Get in touch</h2>
+    <p>
+      Best reached by email or LinkedIn. If you&rsquo;re hiring junior
+      backend engineers, I&rsquo;d love to hear from you.
+    </p>
+    <div class="contact-grid">
+      <a href="mailto:mohamed01280368366@gmail.com" class="contact-card">
+        <span class="contact-label">Email</span>
+        <span class="contact-value">mohamed01280368366@gmail.com</span>
+      </a>
+      <a href="https://www.linkedin.com/in/mohamed-salem-8491362a0/" target="_blank" rel="noopener" class="contact-card">
+        <span class="contact-label">LinkedIn</span>
+        <span class="contact-value">mohamed-salem-8491362a0</span>
+      </a>
+      <a href="https://github.com/leo-salem" target="_blank" rel="noopener" class="contact-card">
+        <span class="contact-label">GitHub</span>
+        <span class="contact-value">leo-salem</span>
+      </a>
+      <a href="https://codeforces.com/profile/Leo_Salem" target="_blank" rel="noopener" class="contact-card">
+        <span class="contact-label">Codeforces</span>
+        <span class="contact-value">Leo_Salem</span>
+      </a>
+      <div class="contact-card static">
+        <span class="contact-label">Phone</span>
+        <span class="contact-value">+20 128 036 8366</span>
+      </div>
+      <div class="contact-card static">
+        <span class="contact-label">Location</span>
+        <span class="contact-value">Cairo, Egypt</span>
+      </div>
+    </div>
+    <p class="cta-bottom">
+      <a href="assets/Mohamed_Salem_CV.pdf" class="btn btn-primary" download>Download my CV (PDF)</a>
+    </p>
+  </section>
+
+  <footer>
+    <p>
+      &copy; <span id="year"></span> Mohamed Salem &middot;
+      Built with HTML, CSS, and zero frameworks &middot;
+      <a href="https://github.com/leo-salem" target="_blank" rel="noopener">source on GitHub</a>
+    </p>
+    <p class="muted small">Last updated <span id="updated"></span></p>
+  </footer>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
