@@ -82,8 +82,8 @@
           I&rsquo;m a fresh Computer Science graduate (Menofia University, June 2026).
           During my degree I built the kind of systems I&rsquo;d want to work on
           in industry: a distributed microservices clinic platform with Kafka
-          and Keycloak, a JWT-secured e-commerce API, a Git clone written
-          from scratch, and a local-first AI-free job-ranking engine.
+          and Keycloak, a JWT-secured e-commerce API, an MVC web app on raw
+          Jakarta Servlets, and a Git clone written from scratch.
         </p>
         <p>
           My focus is the backend stack I know deeply &mdash; Spring Boot,
@@ -149,25 +149,25 @@
 
       <article class="project">
         <header>
-          <h3>Job Hunter</h3>
-          <span class="tag">Full-stack &middot; Recent</span>
+          <h3>Dahab-Tech</h3>
+          <span class="tag">E-Commerce &middot; Servlet / JSP</span>
         </header>
         <div class="stack stack-top">
-          <span>FastAPI</span><span>PostgreSQL</span><span>Redis</span><span>Celery</span>
-          <span>SQLAlchemy</span><span>HTMX</span><span>Docker</span>
+          <span>Java 21</span><span>Jakarta Servlet</span><span>JSP / JSTL</span>
+          <span>Tomcat 10</span><span>MySQL 8</span><span>Redis 7</span><span>Maven</span>
         </div>
         <p class="project-problem">
-          Local-first AI-free job-hunting assistant. Scrapes 7+ sources for
-          Java/backend roles in USA + Europe and Egypt, ranks each job 0&ndash;100
-          with a transparent rule engine.
+          E-commerce backend built on raw Jakarta Servlets and JSP &mdash;
+          no Spring &mdash; to really understand what frameworks do for
+          you under the hood.
         </p>
         <ul class="project-decisions">
-          <li><strong>Determinism over AI:</strong> region-aware rule engine with company tiers (Stripe / OpenAI / Instabug...), visa/relocation signals, anti-spam, role-intent penalties. No external API.</li>
-          <li><strong>Async pipeline:</strong> parallel scrape with global + per-source concurrency caps (LinkedIn=1, Wuzzuf=2). <strong>6&times; faster</strong> after optimisation.</li>
-          <li><strong>Tombstone deletion:</strong> &ldquo;Submitted&rdquo; permanently removes a job and prevents re-add on next scrape.</li>
-          <li><strong>51 tests</strong>, 6 Alembic migrations, full Docker Compose stack (Postgres + Redis + FastAPI + Celery).</li>
+          <li><strong>Auth:</strong> Dual paths via an AuthFilter &mdash; HttpSession or JWT cookie. Role-based access separates admin and user capabilities.</li>
+          <li><strong>Caching:</strong> Redis-backed product catalog with 60-second TTL, auto-invalidated when inventory changes.</li>
+          <li><strong>Rate limiting:</strong> Redis-based throttling at 30 requests per 10 seconds per authenticated user.</li>
+          <li><strong>Architecture:</strong> Clean MVC separation &mdash; Servlets / Services / JDBC DAOs &mdash; with server-side validation and cascading deletes for referential integrity.</li>
         </ul>
-        <a class="project-link" href="https://github.com/leo-salem/Leo-job-hunter" target="_blank" rel="noopener">View on GitHub &rarr;</a>
+        <a class="project-link" href="https://github.com/leo-salem/Dahab-Tech" target="_blank" rel="noopener">View on GitHub &rarr;</a>
       </article>
 
       <article class="project">
